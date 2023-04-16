@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"guia6/ejercicios"
 	"guia6/dictionary"
+	"guia6/ejercicios"
 	"testing"
 )
 
@@ -11,7 +11,7 @@ func TestTraducir(t *testing.T) {
 	dic.Put("Dungeons", "Calabozos")
 	dic.Put("Dragons", "Dragones")
 	salida := ejercicios.Traducir("Dungeons & Dragons", dic)
-	if salida != "Calabozo error Dragones" {
-		t.Errorf("La traducción es %v, pero deberían ser %v", salida, "Calabozo error Dragones")
+	if salida != "Calabozos error Dragones" {
+		t.Errorf("La traducción es %v, pero deberían ser %v", salida, "Calabozos error Dragones")
 	}
 }
